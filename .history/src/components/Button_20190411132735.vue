@@ -9,9 +9,9 @@
 export default {
     props: {
         label: {},
-        operator: { type: Boolean },
-        double: { type: Boolean },
-        triple: { type: Boolean }
+        operator: { type: boolean },
+        double: { type: boolean },
+        triple: { type: boolean }
     }
 
 }
@@ -29,29 +29,6 @@ export default {
     border: none;
     border-right: var(--border-button);
     border-bottom: var(--border-button);
-
-    outline: none;
-}
-
-.button:active {
-    background-color: #ccc;
-}
-
-.button.double {
-    grid-column: span 2;
-}
-
-.button.triple {
-    grid-column: span 3;
-}
-
-.button.operator {
-    background-color: #fa8231;
-    color: #fff;
-}
-
-.button.operator:active {
-    background-color: #fa8231cc;
 }
 
 </style>

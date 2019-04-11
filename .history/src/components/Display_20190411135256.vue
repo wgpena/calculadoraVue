@@ -20,7 +20,7 @@ export default {
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    font-size: 2.1em;
+    font-size: 2.2em;
     overflow: hidden;
 }
 

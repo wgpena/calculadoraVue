@@ -9,9 +9,9 @@
 export default {
     props: {
         label: {},
-        operator: { type: Boolean },
-        double: { type: Boolean },
-        triple: { type: Boolean }
+        operator: { type: boolean },
+        double: { type: boolean },
+        triple: { type: boolean }
     }
 
 }
