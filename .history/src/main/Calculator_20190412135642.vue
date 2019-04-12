@@ -17,7 +17,7 @@
         <Button label="+" operator @onClick="setOperation"/>
         <Button label="0" double @onClick="addDigit"/>
         <Button label="." @onClick="addDigit"/>
-        <Button label="=" operator @onClick="setOperation"/>
+        <Button label="=" />
     </div>
 </template>
 
