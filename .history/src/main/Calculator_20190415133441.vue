@@ -53,16 +53,7 @@ export default {
                     this.values[0] = eval(
                         `${this.values[0]} ${currentOpe} ${this.values[1]} `
                     )
-                } catch (e) {
-                    this.$emit('onError', e)
                 }
-
-                this.values[1] = 0
-
-                this.displayValue = this.values[0]
-                this.operation = equals ? null : operation
-                this.current = equals ? 0 : 1
-                this.clearDisplay = !equals
             }
 
         },
@@ -77,7 +68,12 @@ export default {
 
             this.displayValue = displayValue
             this.clearDisplay = false
-            this.values[this.current] = displayValue            
+
+            if (n !== ".") {
+                const i = this.current
+                const newValue = parseFloat(displayValue)
+                this.values[i] = newValue
+            }
         }
     },
 
